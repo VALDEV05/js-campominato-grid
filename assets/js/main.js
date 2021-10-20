@@ -20,15 +20,14 @@ btnSubmit.addEventListener("click", function () {
     let cell;
 
     gameContainer.innerHTML = "";
-    const numberCol = Math.sqrt(numberCellToAdd)
+    const numberCol = Math.round(Math.sqrt(numberCellToAdd))
     console.log(numberCol)
 
     for (let index = 0; index < numberCellToAdd; index++) {
         // const element = numberColToAdd[index];
         //creazione dell'elemento
-        cell = document.createElement("div")
-        cell.classList.add("cel-box-" + Math.round(numberCol))
-        gameContainer.append(cell)
+        cell = `<div class="cel-box-${numberCol}"></div>`
+        gameContainer.innerHTML += cell
     }
 
     console.log(difficoltLevel)
