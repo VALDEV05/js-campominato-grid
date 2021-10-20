@@ -4,10 +4,8 @@ Avendo determinato il numero delle celle da rappresentare, facendo la radice qua
 
 creo un ciclo che va da o al numero di celle da aggiungere, ad ongi iterazione questo ciclo mi aggiunge un elemento al game.container
     creo l'elemento cell 
-        ho creato un elemento div 
-        a cui ho aggiunto la classe cel-box-con il numero delle colonne
-        e dopo ho aggiunto all'html con il metodo append l'elemento.
+        creo un elemento con il la classe cell e la classe cell-box- e il numero delle colonne che deve avere
 
 
-la classe cell-box-numberCol le ho sintetizzate così 
+la classe cell ha le regole per quanto riguarda la formattazione della cella, mentre la cell-box ha solo la larghezza
 
