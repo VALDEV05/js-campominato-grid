@@ -3,28 +3,20 @@
    height: 500px;
    display: flex;
    flex-flow: wrap;
-
+}
+.cell{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell-box-10{
     width: 10%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .cell-box-9{
     width: calc(100% / 9);
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .cell-box-7{
     width: calc(100% / 7);
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
