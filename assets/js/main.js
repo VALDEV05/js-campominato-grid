@@ -17,6 +17,7 @@ const gameContainer = document.getElementById("boxgame")
 btnSubmit.addEventListener("click", function () {
     const difficoltLevel = btnLevel.value
     const numberCellToAdd = numberCell(difficoltLevel)
+    let cell;
 
     gameContainer.innerHTML = "";
     const numberCol = Math.sqrt(numberCellToAdd)
@@ -25,12 +26,13 @@ btnSubmit.addEventListener("click", function () {
     for (let index = 0; index < numberCellToAdd; index++) {
         // const element = numberColToAdd[index];
         //creazione dell'elemento
-        const cell = document.createElement("div")
+        cell = document.createElement("div")
         cell.classList.add("cel-box-" + Math.round(numberCol))
         gameContainer.append(cell)
     }
 
     console.log(difficoltLevel)
+
 })
 // funzione scelta livello
 function numberCell(difficoltLevel) {
