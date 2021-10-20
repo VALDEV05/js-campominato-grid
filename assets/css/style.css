@@ -6,28 +6,25 @@
 
 }
 
-.cel-box-10{
+.cell-box-10{
     width: 10%;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
 
 }
-.cel-box-9{
+.cell-box-9{
     width: calc(100% / 9);
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
 }
-.cel-box-7{
+.cell-box-7{
     width: calc(100% / 7);
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
 }
