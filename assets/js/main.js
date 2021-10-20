@@ -24,12 +24,16 @@ btnSubmit.addEventListener("click", function () {
     console.log(numberCol)
 
     for (let index = 1; index <= numberCellToAdd; index++) {
-        console.log(index)
+        /*console.log(index) */
         //creazione dell'elemento
         cell = `<div class="cell-box-${numberCol}" id="cell">${index}</div>`
         gameContainer.innerHTML += cell
     }
 
+    const element = document.getElementById('cell')
+    element.addEventListener('click', function () {
+        cell.style.backgroundColor = "red"
+    })
 })
 // funzione scelta livello
 function numberCell(difficoltLevel) {
