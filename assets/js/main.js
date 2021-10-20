@@ -30,9 +30,9 @@ btnSubmit.addEventListener("click", function () {
         gameContainer.innerHTML += cell
 
 
-        const element = document.querySelector('cell-box-${numberCol}')
+        const element = document.querySelector(`.cell-box-${numberCol}`)
         element.addEventListener('click', function () {
-            cell.style.backgroundColor = "red";
+            element.style.backgroundColor = "red";
         })
     }
 
