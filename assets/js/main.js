@@ -26,13 +26,16 @@ btnSubmit.addEventListener("click", function () {
     for (let index = 1; index <= numberCellToAdd; index++) {
         /*console.log(index) */
         //creazione dell'elemento
-        cell = `<div class="cell-box-${numberCol} cell" id="cell">${index}</div>`
+        cell = `<div class="cell-box-${numberCol} cell" id="cell-${index}">${index}</div>`
         gameContainer.innerHTML += cell
 
 
-        const element = document.querySelector(`.cell-box-${numberCol}`)
+        const element = document.getElementById(`cell-${index}`)
+        console.log(element);
         element.addEventListener('click', function () {
-            element.style.backgroundColor = "red";
+            console.log(element);
+            console.log('ciao!');
+            this.style.backgroundColor = "red";
         })
     }
 
