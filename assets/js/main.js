@@ -1,5 +1,4 @@
-/* /*
-
+/*
 L'utente indica un livello di difficoltà in base al quale viene generata una griglia di gioco quadrata,
     in cui ogni cella contiene un numero tra quelli compresi in un range:
         con difficoltà 1 => tra 1 e 100
@@ -15,13 +14,12 @@ const btnLevel = document.getElementById("levelup")
 const gameContainer = document.getElementById("boxgame")
 
 
+const difficoltLevel = btnLevel.value
+const numberCellToAdd = cellNumber(difficoltLevel)
 btnSubmit.addEventListener("click", function() {
-    const difficoltLevel = btnLevel.value
-    const numberCellToAdd = cellNumber(difficoltLevel)
 
     gameContainer.innerHTML = "";
     const numberCol = Math.sqrt(numberCellToAdd)
-    console.log(numberCol)
 
     for (let index = 1; index <= numberCellToAdd; index++) {
         // const element = numberCellToAdd[x];
@@ -35,7 +33,7 @@ btnSubmit.addEventListener("click", function() {
 
     }
 
-    console.log(difficoltLevel)
+    console.log('Il livello scelto dall`utente è: ' + difficoltLevel)
 })
 
 //funzione che gestisce il numero delle celle in base al livello selezionato
@@ -53,7 +51,7 @@ function cellNumber(difficoltLevel) {
     return risultato
 
 }
-//funzione che gestisce l'interazione del click dell'utente
+
 function cellOnClick() {
     this.classList.toggle("active")
 }
